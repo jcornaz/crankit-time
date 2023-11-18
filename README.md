@@ -5,7 +5,7 @@
 [![Crates.io](https://img.shields.io/crates/v/crankit-time)](https://crates.io/crates/crankit-time)
 [![Docs](https://docs.rs/impacted/badge.svg)](https://docs.rs/crankit-time)
 
-An ergonomic input API for the playdate
+An ergonomic time API for the playdate
 
 
 ## Unlicense

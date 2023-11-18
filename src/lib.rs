@@ -1,5 +1,7 @@
 #![no_std]
 
+//! An ergonomic time API for the playdate
+
 mod interop {
     #[cfg(feature = "playdate-sys-v02")]
     mod playdate_sys_v02;
@@ -9,7 +11,7 @@ use core::time::Duration;
 
 /// System capable of tracking elapsed time since last reset
 pub trait ElapsedTime {
-    /// Returns the duration since last [`reset_elapsed_time`] was called.
+    /// Returns the duration since last [`Self::reset_elapsed_time`] was called.
     fn elapsed_time(&self) -> Duration;
 
     /// Resets the timer and return the elapsed time since last reset.

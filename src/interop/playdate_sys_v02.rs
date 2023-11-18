@@ -38,8 +38,9 @@ impl ElapsedTime for ffi::playdate_sys {
 impl AbsoluteTime for ffi::playdate_sys {
     fn elapsed_since_epoch(&self) -> core::time::Duration {
         let mut milliseconds = 0;
-        let seconds =
-            unsafe { self.getSecondsSinceEpoch.unwrap()(ptr::addr_of_mut!(milliseconds)) } as u64;
-        Duration::from_secs(seconds) + Duration::from_millis(milliseconds as u64)
+        let seconds = u64::from(unsafe {
+            self.getSecondsSinceEpoch.unwrap()(ptr::addr_of_mut!(milliseconds))
+        });
+        Duration::from_secs(seconds) + Duration::from_millis(milliseconds.into())
     }
 }
