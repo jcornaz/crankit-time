@@ -5,7 +5,7 @@ license = "Unlicense"
 authors = ["Jonathan Cornaz"]
 edition = "2021"
 repository = "https://github.com/jcornaz/crankit-time"
-description = "An ergonomic input API for the playdate"
+description = "An ergonomic time API for the playdate"
 categories = ["api-bindings", "game-development", "no-std"]
 keywords = ["playdate", "gamedev", "no_std"]
 
