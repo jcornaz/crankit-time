@@ -3,7 +3,7 @@
 
 [![License](https://img.shields.io/crates/l/crankit-time)](#Unlicense)
 [![Crates.io](https://img.shields.io/crates/v/crankit-time)](https://crates.io/crates/crankit-time)
-[![Docs](https://docs.rs/impacted/badge.svg)](https://docs.rs/crankit-time)
+[![Docs](https://docs.rs/crankit-time/badge.svg)](https://docs.rs/crankit-time)
 
 An ergonomic time API for the playdate
 
